@@ -6,6 +6,6 @@
   <li>
     <ul></ul>
     <ul>R. Askarrofi Prabularizda Anggoro - NIM : 124140070</ul>
-    <ul></ul>
+    <ul>Jalaludin Mufadhol Al Faruq - NIM: 124140154 (Ketua)</ul>
   </li>
 </div>
