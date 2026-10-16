@@ -45,7 +45,7 @@ fun App() {
                     Text("Nama Anggota:")
                     Text("R. Askarrofi Prabularizda Anggoro (124140070)")
                     Text("Jalaludin Mufadhol Al Faruq (124140154)")
-                    Text("")
+                    Text("Mahawira Athaya Fikri (124140050)")
                     Text(sapa)
 
                 }
