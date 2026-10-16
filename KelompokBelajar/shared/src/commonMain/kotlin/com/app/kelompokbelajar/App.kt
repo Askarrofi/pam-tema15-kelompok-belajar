@@ -35,13 +35,19 @@ fun App() {
                 Text("Click me!")
             }
             AnimatedVisibility(showContent) {
-                val greeting = remember { Greeting().greet() }
+                val sapa = remember { sapaan() }
                 Column(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalAlignment = Alignment.CenterHorizontally,
                 ) {
                     Image(painterResource(Res.drawable.compose_multiplatform), null)
-                    Text("Compose: $greeting")
+                    Text("Tema: 2. Kelompok Belajar")
+                    Text("Nama Anggota:")
+                    Text("R. Askarrofi Prabularizda Anggoro (124140070)")
+                    Text("")
+                    Text("")
+                    Text(sapa)
+
                 }
             }
         }

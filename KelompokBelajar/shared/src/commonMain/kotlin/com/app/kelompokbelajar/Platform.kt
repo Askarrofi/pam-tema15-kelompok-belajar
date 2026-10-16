@@ -1,7 +1,6 @@
 package com.app.kelompokbelajar
 
-interface Platform {
-    val name: String
-}
+expect fun namaPlatform(): String
 
-expect fun getPlatform(): Platform
+fun sapaan(): String =
+    "Platform: ${namaPlatform()}"
