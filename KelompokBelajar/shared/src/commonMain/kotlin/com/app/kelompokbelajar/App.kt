@@ -41,7 +41,7 @@ fun App() {
                     horizontalAlignment = Alignment.CenterHorizontally,
                 ) {
                     Image(painterResource(Res.drawable.compose_multiplatform), null)
-                    Text("Tema: 2. Kelompok Belajar")
+                    Text("Tema: 15. Kelompok Belajar")
                     Text("Nama Anggota:")
                     Text("R. Askarrofi Prabularizda Anggoro (124140070)")
                     Text("")
