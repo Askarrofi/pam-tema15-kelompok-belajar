@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.flow
 fun contohKelompok(id: Int, status: StatusKelompok = StatusKelompok.Dibuka) = KelompokBelajar(
     id = id,
     nama = "isi",
-    mataKuliah = MataKuliah("IF25-22017", "Pengambangan Aplikasi Mobile", 3),
+    mataKuliah = MataKuliah("IF25-22017", "Pengembangan Aplikasi Mobile", 3),
     lokasi = "GK1.208",
     tautanGrup = null,
     status = status
