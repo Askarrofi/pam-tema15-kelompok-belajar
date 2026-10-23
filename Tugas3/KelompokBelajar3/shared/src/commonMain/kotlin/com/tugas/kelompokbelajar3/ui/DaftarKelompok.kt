@@ -15,7 +15,7 @@ fun DaftarKelompok(
 ) {
     LazyColumn(
         contentPadding = PaddingValues(start = 16.dp, top = 16.dp, end = 16.dp, bottom = 88.dp),
-        verticalArrangement = Arrangement.spacedBy(12.dp) // jarak antar kartu
+        verticalArrangement = Arrangement.spacedBy(12.dp)
     ) {
         items(semua, key = { it.id }) { kelompok ->
             KartuKelompok(kelompok, onKlik = { onPilih(kelompok) })

@@ -14,9 +14,9 @@ import com.tugas.kelompokbelajar3.model.StatusKelompok
 @Composable
 fun LabelStatus(status: StatusKelompok) {
     val (teks, warna) = when (status) {
-        StatusKelompok.Dibuka -> "Dibuka" to Color(0xFFBBDEFB)        // biru muda
-        is StatusKelompok.Berjalan -> "Berjalan" to Color(0xFFFFE082) // kuning
-        is StatusKelompok.Selesai -> "Selesai" to Color(0xFFA5D6A7)   // hijau
+        StatusKelompok.Dibuka -> "Dibuka" to Color(0xFFBBDEFB)
+        is StatusKelompok.Berjalan -> "Berjalan" to Color(0xFFFFE082)
+        is StatusKelompok.Selesai -> "Selesai" to Color(0xFFA5D6A7)
     }
 
     Text(
