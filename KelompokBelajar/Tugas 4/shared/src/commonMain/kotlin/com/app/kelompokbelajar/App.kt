@@ -50,7 +50,7 @@ fun App() {
                 Text("Nama Anggota:")
                 Text("R. Askarrofi Prabularizda Anggoro (124140070)")
                 Text("Jalaludin Mufadhol Al Faruq (124140164)")
-                Text("Mahavira Athaya Fikri (124140038)")
+                Text("Mahavira Athaya Fikri (124140050)")
 
                 Button(
                     onClick = { diForm = !diForm },

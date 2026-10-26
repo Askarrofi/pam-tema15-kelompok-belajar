@@ -2,7 +2,6 @@ package com.app.kelompokbelajar.ui
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -19,13 +18,7 @@ fun LayarUtama(semua: List<KelompokBelajar>) {
     val terbaru = semua.sortedByDescending { it.id }
     val jumlahAktif = semua.count { it.status !is Status.Selesai }
 
-    Scaffold(
-        floatingActionButton = {
-            FloatingActionButton(onClick = { }) {
-                Text("+", fontSize = 24.sp)
-            }
-        }
-    ) { innerPadding ->
+    Scaffold{ innerPadding ->
         Column(modifier = Modifier.padding(innerPadding)) {
             Text(
                 text = "Kelompok Belajar",

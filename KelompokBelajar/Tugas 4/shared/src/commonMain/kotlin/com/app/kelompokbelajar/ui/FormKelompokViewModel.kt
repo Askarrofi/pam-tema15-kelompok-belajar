@@ -3,6 +3,7 @@ package com.app.kelompokbelajar.ui
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.app.kelompokbelajar.data.PenyimpananKelompok
+import com.app.kelompokbelajar.model.Matakuliah
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -21,6 +22,14 @@ class FormKelompokViewModel : ViewModel() {
         _uiState.update { it.copy(lokasi = teks) }
     }
 
+    fun ubahTautan(teks: String) {
+        _uiState.update { it.copy(tautanGrup = teks) }
+    }
+
+    fun ubahMatakuliah(matakuliah: Matakuliah) {
+        _uiState.update { it.copy(matakuliah = matakuliah) }
+    }
+
     fun kirim() {
         if (!_uiState.value.bisaSimpan) return
 
@@ -28,7 +37,12 @@ class FormKelompokViewModel : ViewModel() {
             _uiState.update { it.copy(sedangMengirim = true) }
             delay(800)
 
-            PenyimpananKelompok.tambah(_uiState.value.nama, _uiState.value.lokasi)
+            PenyimpananKelompok.tambah(
+                nama = _uiState.value.nama,
+                lokasi = _uiState.value.lokasi,
+                tautanGrup = _uiState.value.tautanGrup,
+                matakuliah = _uiState.value.matakuliah
+            )
 
             _uiState.value = FormKelompokUiState(pesan = "Kelompok berhasil ditambahkan")
         }
