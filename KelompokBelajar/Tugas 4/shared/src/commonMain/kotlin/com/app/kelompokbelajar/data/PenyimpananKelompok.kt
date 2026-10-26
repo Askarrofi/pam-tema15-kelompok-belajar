@@ -9,16 +9,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 
 object PenyimpananKelompok {
-    private val _daftar = MutableStateFlow(listOf<KelompokBelajar>(
-        KelompokBelajar(
-            id = 1,
-            nama = "Pejuang Mobile",
-            matakuliah = Matakuliah("IF25-22017", "Pengembangan Aplikasi Mobile", 3),
-            lokasi = "GKU1 201",
-            tautanGrup = null,
-            status = Status.Dibuka
-        )
-    ))
+    private val _daftar = MutableStateFlow(emptyList<KelompokBelajar>())
 
     val daftar: StateFlow<List<KelompokBelajar>> = _daftar.asStateFlow()
 
