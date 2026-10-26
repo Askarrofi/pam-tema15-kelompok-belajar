@@ -9,7 +9,7 @@ import com.tugas.kelompokbelajar3.ui.LayarUtama
 @Composable
 @Preview
 fun App() {
-    MaterialTheme {
+    MaterialTheme 
         LayarUtama(daftarKelompokContoh)
     }
 }
