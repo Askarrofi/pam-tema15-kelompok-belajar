@@ -8,9 +8,7 @@
   <h2>Mahawira Athaya Fikri (124140050)</h2>
   <h2>Bukti Screenshot Tugas Praktikum 4: </h2>
   <p align="center">
-    <img src="./Bukti1.png" alt="Bukti Screenshot" width="400">
-    <img src="./Bukti2.png" alt="Bukti Screenshot" width="400">
-    <img src="./Bukti3.png" alt="Bukti Screenshot" width="400">
-    <img src="./Bukti4.png" alt="Bukti Screenshot" width="400">
-    <img src="./Bukti5.png" alt="Bukti Screenshot" width="400">
+    <img src="./Bukti1.4.png" alt="Bukti Screenshot" width="400">
+    <img src="./Bukti2.4.png" alt="Bukti Screenshot" width="400">
+    <img src="./Bukti3.4.png" 
 </div>
